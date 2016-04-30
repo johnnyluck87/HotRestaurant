@@ -16,16 +16,16 @@
         <h1 class="text-center">Hot Restaurant</h1>
         <h3 class="text-center">Make Your Reservation</h3>
         <div class="text-center">
-                <a href="/tables"><button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-list-alt"></span> View Tables</button></a>
-                <a href="/reserve"><button type="button" class="btn btn-lg btn-danger"><span class="glyphicon glyphicon-credit-card"></span> Make Reservation</button></a>
+                <a href="tables.html"><button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-list-alt"></span> View Tables</button></a>
+                <a href="reserve.html"><button type="button" class="btn btn-lg btn-danger"><span class="glyphicon glyphicon-home"></span></button></a>
             </div>
     </div>
 
 
-<!-- Add Employee  -->
+<!-- Add Reservation  -->
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><strong>Add Employee</strong></h3>
+                    <h3 class="panel-title"><strong>Table Reservation</strong></h3>
                 </div>
                 <div class="panel-body">
     
@@ -34,22 +34,22 @@
                 <form>
                     <div class="form-group">
                         <label for="">Name</label>
-                        <input type="text" class="form-control" id="employeeNameInput">
+                        <input type="text" class="form-control" id="NameInput">
                     </div>
 
                     <div class="form-group">
                         <label for="">Phone Number</label>
-                        <input type="text" class="form-control" id="roleInput">
+                        <input type="text" class="form-control" id="phoneNumberInput">
                     </div>
 
                     <div class="form-group">
                         <label for="">EMAIL</label>
-                        <input type="text" class="form-control" id="startInput">
+                        <input type="text" class="form-control" id="emailInput">
                     </div>
 
                     <div class="form-group">
                         <label for="">Unique ID</label>
-                        <input type="text" class="form-control" id="rateInput">
+                        <input type="text" class="form-control" id="uniqueIDInput">
                     </div>
                     
                     <button type="submit" class="btn btn-primary" id="addEmployeeBtn">Submit</button>
@@ -61,10 +61,12 @@
         </div>
     </div>
 </div>
-<footer class="footer">
+
+	<footer class="footer">
     	<div class="container">
-    		
-    	</div>
+        <p><a href="/api/tables">API Table Link</a></p>
+        <p><a href="/api/waitlist">API Wait List</a></p>
+    		</div>
     </footer>
 
 
