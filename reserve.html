@@ -31,25 +31,25 @@
     
 
                 <!-- Entry Form -->
-                <form>
+                <form action="/api/tables" method="post">
                     <div class="form-group">
                         <label for="">Name</label>
-                        <input type="text" class="form-control" id="NameInput">
+                        <input type="text" class="form-control" name="NameInput">
                     </div>
 
                     <div class="form-group">
                         <label for="">Phone Number</label>
-                        <input type="text" class="form-control" id="phoneNumberInput">
+                        <input type="text" class="form-control" name="phoneNumberInput">
                     </div>
 
                     <div class="form-group">
                         <label for="">EMAIL</label>
-                        <input type="text" class="form-control" id="emailInput">
+                        <input type="text" class="form-control" name="emailInput">
                     </div>
 
                     <div class="form-group">
                         <label for="">Unique ID</label>
-                        <input type="text" class="form-control" id="uniqueIDInput">
+                        <input type="text" class="form-control" name="uniqueIDInput">
                     </div>
                     
                     <button type="submit" class="btn btn-primary" id="addEmployeeBtn">Submit</button>

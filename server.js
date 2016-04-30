@@ -3,6 +3,7 @@ var bodyParser = require('body-parser');
 
 var app = express();
 var PORT = 3000;
+var path = require('path');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -18,15 +19,15 @@ var waitList = [];
 
 // routes
 app.get('/', function(req, res) {
-	res.send(home.html);
-})
+	res.sendFile(path.join(__dirname + '/home.html'));
+});
 
 app.get('/reserve', function (req, res) {
-	res.send(reserve.html);
+	res.sendFile(path.join(__dirname + '/reserve.html'));
 });
 
 app.get('/tables', function (req, res) {
-	res.send(tables.html);
+	res.sendFile(path.join(__dirname + '/tables.html'));
 });
 
 // api routes
